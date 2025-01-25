@@ -83,82 +83,19 @@
         footer p {
             margin: 0;
         }
-        .about-container, .contact-container {
-            max-width: 800px;
-            margin: 50px auto;
-            padding: 20px;
-            background: #fff;
-            border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        h1, h2 {
-            text-align: center;
-            color: #cc0077;
-        }
-        .highlight {
-            color: #cc0077;
-            font-weight: bold;
-        }
-        img {
-            display: block;
-            max-width: 200px;
-            margin: 20px auto;
-            border-radius: 50%;
-            border: 3px solid #ff99cc;
-        }
-        p {
-            line-height: 1.8;
-            font-size: 1.1rem;
-            margin-bottom: 20px;
-            color: #5a005a;
-        }
-        form {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-        label {
-            font-weight: bold;
-            color: #5a005a;
-        }
-        input, textarea {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ff99cc;
-            border-radius: 5px;
-            font-size: 1rem;
-        }
-        button {
-            background-color: #ff66b2;
-            color: white;
-            padding: 10px;
-            border: none;
-            border-radius: 5px;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-        button:hover {
-            background-color: #e60073;
-        }
     </style>
 </head>
 <body>
-
-    <!-- Header Section -->
     <header>
         <h1>Welcome to My Blog</h1>
     </header>
-
-    <!-- Navigation Bar -->
     <nav>
         <a href="#home">Home</a>
         <a href="#about">About</a>
+        <a href="#blog">Blog</a>
         <a href="#contact">Contact</a>
     </nav>
-
-    <!-- Home Page Section -->
-    <div id="home" class="container">
+    <div class="container">
         <div class="post">
             <h2>10/01/25</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -170,50 +107,8 @@
             <a href="#">Read more...</a>
         </div>
     </div>
-
-    <!-- About Me Section -->
-    <div id="about" class="about-container">
-        <h1>About Me</h1>
-        <img src="https://i.etsystatic.com/40317824/r/il/339134/4827441773/il_fullxfull.4827441773_887m.jpg" alt="Your Photo">
-        <p>
-            Hi there! My name is <span class="highlight">Gaury</span>, and I’m the heart behind this blog. 
-            I’m passionate about <span class="highlight">Food</span>, and I love sharing my journey, 
-            tips, and experiences with all of you.
-        </p>
-        <p>
-            When I’m not blogging, you’ll find me <span class="highlight">writing</span> or exploring 
-            <span class="highlight">beaches</span>. I believe life is all about spreading positivity, 
-            chasing dreams, and making every moment magical.
-        </p>
-        <p>
-            Thank you for stopping by! I hope my blog inspires you.. 
-            Let’s connect and grow together!
-        </p>
-    </div>
-
-    <!-- Contact Me Section -->
-    <div id="contact" class="contact-container">
-        <h2>Contact Me</h2>
-        <p>Feel free to reach out! I'd love to hear from you.</p>
-        <form action="https://formspree.io/f/{your-form-id}" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Your Name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Your Email" required>
-            
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
-            
-            <button type="submit">Send Message</button>
-        </form>
-    </div>
-
-    <!-- Footer Section -->
     <footer>
         <p>&copy; 2025 My Blog. All rights reserved.</p>
     </footer>
-
 </body>
 </html>
-
